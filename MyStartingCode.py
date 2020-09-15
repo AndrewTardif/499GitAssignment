@@ -8,8 +8,11 @@ def sumNum(n):
 
 
 def removeData(n):
-    n.pop();
-    return 'Data = ' + str(n)
+    if n:
+        n.pop();
+        return 'Data = ' + str(n)
+    else:
+        return 'No Data left'
 
 def multNum(n):
     mult = 1
@@ -29,5 +32,7 @@ def Choose(arg):
 print('Enter what you want to do with the Data')
 print(*data)
 print('Enter 1 for Getting the Result of Summing the Data')
+print('Enter 2 for Getting the Result of Multiplying the Data')
+print('Enter 3 for Getting whatever Data is left')
 x = input('')
 print(Choose(int(x)))
