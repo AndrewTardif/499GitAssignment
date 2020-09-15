@@ -27,7 +27,7 @@ def Choose(arg):
         2 : multNum(data),
         3 : removeData(data),
     }
-    return choice.get(arg, "invalid option")
+    return choice.get(arg, "invalid option") #hi everyone!!!!!!
 
 print('Enter what you want to do with the Data')
 print(*data)
