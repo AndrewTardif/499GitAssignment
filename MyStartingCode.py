@@ -6,9 +6,17 @@ def sumNum(n):
         sum += x
     return 'sum ' + str(sum)
 
+def multNum(n):
+    mult = 1
+    for x in n:
+      mult *= x
+
+    return 'mult ' + str(mult)
+
 def Choose(arg):
     choice = {
         1 : sumNum(data),
+        2 : multNum(data),
     }
     return choice.get(arg, "invalid option")
 
