@@ -13,7 +13,7 @@ def Choose(arg):
     return choice.get(arg, "invalid option")
 
 print('Enter what you want to do with the Data')
-print(*data, sep= ' , ')
+print(*data)
 print('Enter 1 for Getting the Result of Summing the Data')
 x = input('')
 print(Choose(int(x)))
