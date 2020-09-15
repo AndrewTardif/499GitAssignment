@@ -6,9 +6,14 @@ def sumNum(n):
         sum += x
     return 'sum ' + str(sum)
 
+def removeData(n):
+    n.pop();
+    return 'Data = ' + str(n)
+
 def Choose(arg):
     choice = {
         1 : sumNum(data),
+        2 : removeData(n),
     }
     return choice.get(arg, "invalid option")
 
