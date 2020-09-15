@@ -6,27 +6,23 @@ def sumNum(n):
         sum += x
     return 'sum ' + str(sum)
 
-<<<<<<< HEAD
+
 def removeData(n):
     n.pop();
     return 'Data = ' + str(n)
-=======
+
 def multNum(n):
     mult = 1
     for x in n:
       mult *= x
 
     return 'mult ' + str(mult)
->>>>>>> refs/heads/MultiplyFunction
 
 def Choose(arg):
     choice = {
         1 : sumNum(data),
-<<<<<<< HEAD
-        2 : removeData(n),
-=======
         2 : multNum(data),
->>>>>>> refs/heads/MultiplyFunction
+        3 : removeData(data),
     }
     return choice.get(arg, "invalid option")
 
